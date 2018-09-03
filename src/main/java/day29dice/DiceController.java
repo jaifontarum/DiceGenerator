@@ -24,11 +24,11 @@ public class DiceController {
 	
 	@RequestMapping("/randomNumber")
 	public List<Dice> dice(){
-		SimpleDateFormat sdf= new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+//		SimpleDateFormat sdf= new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 //		DBConnectionFactory myFactory = DBConnectionFactory.getInstance();
 //		Connection conn = myFactory.getConnection();
-		PreparedStatement ps =null;
-		String query ="";
+//		PreparedStatement ps =null;
+//		String query ="";
 		List <Dice> randomDice = new ArrayList<Dice>();
 		
 		Random random = new Random();
