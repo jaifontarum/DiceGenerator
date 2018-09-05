@@ -22,13 +22,9 @@ public class DBConnectionFactoryImpl extends DBConnectionFactory {
 	@Override
 	public Connection getConnection() {
 		try {
-			//String propFilename= "application.properties";
-			input = new FileInputStream("target/config/application.properties");
+			
+			input = new FileInputStream("config/application.properties");
 			prop.load(input);
-
-//			prop.getProperty("use.database");
-//	        prop.getProperty("username");
-//	        prop.getProperty("password");
 			
 	        if(prop.getProperty("use.database").equals("true")) {
 	        	 Class.forName(prop.getProperty("db.mysql.drivername"));
